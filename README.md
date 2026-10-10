@@ -104,7 +104,7 @@ Values between 0 and 255 represent different shades of gray.
 
 ## 🎯 Training Data
 
-For this project, **5,000 samples** are used for training.
+For this project, **7,000 samples** are used for training.
 
 The data is divided into:
 
@@ -118,7 +118,7 @@ The data is divided into:
         Pixel Data              Labels
              │                   │
              ▼                   ▼
-       5,000 × 784            5,000
+       7,000 × 784            7,000
        pixel values          digit labels
                               (0–9)
 ```
@@ -136,7 +136,7 @@ Each image is represented by **784 pixel values**:
 Therefore:
 
 ```text
-X_train.shape = (5000, 784)
+X_train.shape = (7000, 784)
 ```
 
 ### `y_train`
@@ -146,7 +146,7 @@ X_train.shape = (5000, 784)
 Therefore:
 
 ```text
-y_train.shape = (5000,)
+y_train.shape = (7000,)
 ```
 
 For example:
@@ -175,12 +175,12 @@ mnist_train.csv
 Pandas DataFrame
         │
         ▼
-Select 5,000 samples
+Select 7,000 samples
         │
         ├──────────────────┐
         ▼                  ▼
      X_train             y_train
-   5,000 × 784           5,000
+   7,000 × 784           7,000
     pixel values         labels
         │                  │
         └────────┬─────────┘
